@@ -60,16 +60,16 @@ a:hover {
 /* header */
 
 header {
-  padding: 8px 0;
+  padding: 4px 0;
+  background-color: rgba(255, 255, 255, .95);
   position: fixed;
   top: 0;
   width: 100%;
-  transition: background-color .6s, box-shadow .6s;
+  transition: box-shadow .6s;
   z-index: 1;
 }
 
 header.scrolled {
-  background-color: rgba(255, 255, 255, .95);
   box-shadow: 0 0 4px rgba(0, 0, 0, .3);
 }
 
@@ -93,7 +93,7 @@ header nav li a i {
 /* main */
 
 main {
-  padding: 64px 0;
+  padding: 42px 0;
 }
 
 /* hero */
