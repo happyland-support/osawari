@@ -27,4 +27,28 @@
     });
   });
 
+  /* メニュー */
+
+  class Menu {
+    constructor() {
+      this.open = document.getElementById('open');
+      this.overlay = document.querySelector('.overlay')
+      this.mask = document.querySelector('.mask');
+    }
+    addListeners() {
+      this.open.addEventListener('click', () => {
+        this.overlay.classList.add('show');
+        this.mask.classList.remove('disable');
+      });
+
+      this.mask.addEventListener('click', () => {
+        this.overlay.classList.remove('show');
+        this.mask.classList.add('disable');
+      });
+    }
+  }
+
+  const menu = new Menu();
+  menu.addListeners();
+
 }
