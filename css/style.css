@@ -7,6 +7,7 @@ body {
   background: #eee;
   color: #333;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 h1,
@@ -29,6 +30,7 @@ ul {
 
 p {
   margin: 0;
+  font-size: 16px;
 }
 
 a {
@@ -49,8 +51,8 @@ i {
 code {
   background:rgba(0, 0, 0, .1);
   border-radius: 4px;
-  margin: 0 5px;
-  padding: 4px 10px;
+  margin: 0 4px;
+  padding: 4px 8px;
 }
 
 .container {
@@ -485,7 +487,7 @@ aside + aside {
 
 /* ad */
 
-.sp-ad {
+.ad-sp {
   margin-top: 24px;
   text-align: center;
 }
@@ -610,6 +612,10 @@ footer li + li {
     padding: 0 64px;
   }
 
+  .list .container {
+    padding: 0 32px;
+  }
+
   header nav {
     display: none;
   }
@@ -618,7 +624,7 @@ footer li + li {
     width: auto;
   }
 
-  .sp-ad {
+  .ad-sp {
     display: none;
   }
 
