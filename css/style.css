@@ -1,10 +1,19 @@
 /* common */
+:root {
+  --base-color: #eee;;
+  --main-color: #56b7d5;
+  --main-dark-color: #5991a3;
+  --sub-color: #50bd9e;
+  --sub-light-color: #fcf264;
+  --accent-color: #f19ec2;
+  --accent-dark-color: #e06c75;
+}
 
 body {
   margin: 0;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "M PLUS Rounded 1c", "Noto Sans JP", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
-  background: #eee;
+  background: var(--base-color);
   color: #333;
   line-height: 1.6;
   font-size: 16px;
@@ -52,7 +61,7 @@ code {
   background:rgba(0, 0, 0, .1);
   border-radius: 4px;
   margin: 0 4px;
-  padding: 4px 8px;
+  padding: 2px 8px;
 }
 
 .container {
@@ -76,7 +85,7 @@ code {
 
 #to-top i {
   font-size: 32px;
-  color: #56b7d5;
+  color: var(--main-color);
 }
 
 /* header */
@@ -134,14 +143,14 @@ header nav li a i {
 }
 
 .overlay h1 {
-  background: #56b7d5;
+  background: var(--main-color);
   color: #fff;
   font-size: 18px;
   padding: 8px;
 }
 
 .overlay li {
-  border-bottom: 1px solid #5991a3;
+  border-bottom: 1px solid var(--main-dark-color);
 }
 
 .overlay li a {
@@ -196,7 +205,7 @@ aside + aside {
 
 .category h1,
 .profile h1 {
-  background: #56b7d5;
+  background: var(--main-color);
   color: #fff;
   font-size: 16px;
   padding: 8px;
@@ -252,8 +261,8 @@ aside + aside {
 
 .list article {
   background: #fafafa;
-  /* outline: 2px solid blue; */
   transition: transform .4s, box-shadow .4s;
+  /* outline: 2px solid blue; */
 }
 
 .list article:hover {
@@ -270,7 +279,7 @@ aside + aside {
   top: 0;
   left: 0;
   color: #fff;
-  background: #f19ec2;
+  background: var(--accent-color);
   padding: .2em 1em;
   font-size: 12px;
 }
@@ -325,6 +334,7 @@ aside + aside {
 
 .post-date {
   text-align: right;
+  font-size: 14px;
 }
 
 .content .article-top-img {
@@ -333,12 +343,12 @@ aside + aside {
 
 .content .caption {
   margin: 24px auto;
-  border: 1px solid #56b7d5;
+  border: 1px solid var(--main-color);
   border-radius: 12px;
 }
 
 .content .caption h1 {
-  background: #56b7d5;
+  background: var(--main-color);
   font-size: 16px;
   color: #fff;
   text-align: center;
@@ -358,9 +368,9 @@ aside + aside {
 
 .content h2 {
   font-size: 18px;
-  border-left: 5px solid #56b7d5;
+  border-left: 5px solid var(--main-color);
   border-bottom: 3px solid #ccc;
-  background: #eee;
+  background: var(--base-color);
   padding: 8px 8px 4px;
   margin: 36px 0 12px;
 }
@@ -376,13 +386,13 @@ aside + aside {
 
 .content h3 {
   font-size: 16px;
-  border-left: 4px solid #f19ec2;
+  border-left: 4px solid var(--accent-color);
   padding: 6px;
   margin: 24px 0;
 }
 
 .content h4 {
-  color: #ff8585;
+  color: var(--accent-dark-color);
   text-align: center;
   margin: 12px 0;
 }
@@ -398,6 +408,7 @@ aside + aside {
   border: 2px solid #ababab;
   border-radius: 4px;
   padding: 12px;
+  margin-top: 16px;
 }
 
 .content .sample .desc::before {
@@ -473,7 +484,7 @@ aside + aside {
 .back-to-category .btn {
   width: 50%;
   margin: 0 auto;
-  background: #56b7d5;
+  background: var(--main-color);
   border-radius: 4px;
   text-align: center;
 }
@@ -498,7 +509,7 @@ footer {
   margin-top: 24px;
   padding: 24px 0;
   background: #4c4948;
-  color: #eee;
+  color: var(--base-color);
 }
 
 footer .container {
@@ -557,6 +568,7 @@ footer li + li {
   }
 
   .content .sample .desc {
+    margin-top: 0;
     width: 49%;
   }
 
@@ -622,6 +634,11 @@ footer li + li {
 
   .list .container {
     width: auto;
+  }
+
+  .post-date {
+    text-align: right;
+    font-size: 16px;
   }
 
   .ad-sp {
