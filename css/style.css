@@ -280,7 +280,7 @@ aside + aside {
   left: 0;
   color: #fff;
   background: var(--accent-color);
-  padding: .1em 1em;
+  padding: .1em .7em;
   font-size: 12px;
 }
 
