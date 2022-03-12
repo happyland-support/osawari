@@ -567,6 +567,10 @@ footer li + li {
     margin: 0;
   }
 
+  .list article h2 {
+    font-size: 14px;
+}
+
   .content .sample {
     display: flex;
     align-items: center;
