@@ -433,6 +433,12 @@ aside + aside {
   transform: translateX(-50%);
 }
 
+.content .sample .desc img {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+
 /* hljs */
 
 .hljs {
