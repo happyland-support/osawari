@@ -325,7 +325,7 @@ aside + aside {
 }
 
 .content .container > h1 {
-  padding: 16px 0;
+  padding: 42px 0;
   font-size: 22px;
   font-weight: bold;
   text-align: center;
@@ -441,6 +441,23 @@ aside + aside {
   position: absolute;
   bottom: -40px;
   right: 0;
+}
+
+.content table {
+  width: 100%;
+}
+
+.content table th {
+  background: #ddd;
+  width: 40%;
+  padding: 6px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.content table td {
+  padding: 6px;
+  width: 60%;
 }
 
 /* hljs */

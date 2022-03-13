@@ -58,146 +58,124 @@
     <div class="container">
 
       <h1>
-        aタグのクリック範囲を親要素のサイズに合わせる方法
+        Windowsで良く使うショートカット
       </h1>
 
       <div class="post-date">
         <span>
           <i class="bi bi-clock"></i>
-          2022/03/08
+          2022/03/20
         </span>
       </div>
 
-      <img src="img/html-css/html-css_001-hero.png" alt="記事のトップイメージ" class="article-top-img">
+      <img src="img/others/others_002-hero.png" alt="記事のトップイメージ" class="article-top-img">
 
       <section class="caption">
         <h1><i class="bi bi-list-ul"></i>この記事の目次</h1>
         <ul>
-          <li><a href="">aタグについてのおさらい</a></li>
-          <li><a href="">親要素がリストの場合</a></li>
+          <li><a href="">選択関連</a></li>
+          <li><a href="">コピー・ペースト</a></li>
+          <li><a href="">進む・戻る</a></li>
+          <li><a href="">検索・置換</a></li>
+          <li><a href="">その他+困った時</a></li>
         </ul>
       </section>
 
       <section>
-        <h2>aタグについてのおさらい</h2>
-        <ul class="list-style">
-          <li>aタグはインライン要素です</li>
-          <li>aタグでdivやh1などのブロック要素を囲んでもOKです</li>
-          <li>aタグでブロック要素を囲む時は、aタグを<code>display: block</code>または<code>display: inline-block</code>にしてブロック要素に変えておくと良いです</li>
-        </ul>
+        <h2>選択関連</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Ctrl+A</th>
+              <td>ファイルを全てを選択する</td>
+            </tr>
+            <tr>
+              <th>Shift+クリック</th>
+              <td>ファイルをまとめて一気に選択する</td>
+            </tr>
+            <tr>
+              <th>Ctrl+クリック</th>
+              <td>ファイルを個々に選択する</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section>
-        <h2>親要素がリストの場合</h2>
-        <h3>その１ まずはリストメニューを作ってみます。</h3>
-<pre><code class="html">
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="#"&gt;リンク その１&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;リンク その２&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;リンク その３&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-<pre><code class="css">
-ul {
-  list-style: none;
-}
-ul li {
-  width: 220px;
-  background: #50bd9e;
-  padding: 8px 15px;
-}
-ul li a {
-  color: #fff;
-}
-ul li + li {
-  margin-top: 5px;
-}
-</code></pre>
-        <h4>サンプル</h4>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/html-css/html-css_001_01.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              aタグのテキスト部分のみがリンクの範囲となります。<br>そのため、文字のない部分はクリックできず不便です。
-            </p>
-          </div>
-        </section>
-
+        <h2>コピー・ペースト</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Ctrl+C</th>
+              <td>コピーする</td>
+            </tr>
+            <tr>
+              <th>Ctrl+X</th>
+              <td>切り取りする</td>
+            </tr>
+            <tr>
+              <th>Ctrl+V</th>
+              <td>ペーストする</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section>
-        <h3>その２ aタグをブロック要素に変更する</h3>
-<pre><code class="css">
-ul {
-  list-style: none;
-}
-ul li {
-  width: 220px;
-  background: #50bd9e;
-  padding: 8px 15px;
-}
-ul li a {
-  color: #fff;
-  display: block;
-}
-ul li + li {
-  margin-top: 5px;
-}
-</code></pre>
-        <h4>サンプル</h4>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/html-css/html-css_001_02.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              <code>display: block</code>にすることで<code>width: 100%</code>になります。<br>
-              これで一見良さそうに見えますが、実はpaddingを設定している部分がクリックできません。
-            </p>
-          </div>
-        </section>
+        <h2>進む・戻る</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Ctrl+Z</th>
+              <td>１つ戻る</td>
+            </tr>
+            <tr>
+              <th>Ctrl+Y</th>
+              <td>１つ進む</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section>
-        <h3>その３ paddingをaタグに付け替えてみる</h3>
-<pre><code class="css">
-ul {
-  list-style: none;
-}
-ul li {
-  width: 220px;
-  background: #50bd9e;
-}
-ul li a {
-  color: #fff;
-  display: block;
-  padding: 8px 15px;
-}
-ul li + li {
-  margin-top: 5px;
-}
-</code></pre>
-        <h4>サンプル</h4>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/html-css/html-css_001_03.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              paddingをliタグからaタグに付け替えることで、リスト全体にリンクの範囲が広がりました。<br>
-              なお、リストに設定したpadding分、横幅の大きさが小さくなります。<br>
-              これで完成です！
-            </p>
-            <img src="img/finish.png" alt="" width="100" height="100" class="finish">
-          </div>
-        </section>
+        <h2>検索・置換</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Ctrl+F</th>
+              <td>検索する</td>
+            </tr>
+            <tr>
+              <th>Ctrl+H</th>
+              <td>置換する</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>その他+困った時</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Ctrl+S</th>
+              <td>セーブする</td>
+            </tr>
+            <tr>
+              <th>Shift+Windows+S</th>
+              <td>クリーンショットを撮る</td>
+            </tr>
+            <tr>
+              <th>Ctrl+Shift+Esc</th>
+              <td>タスクマネージャーを起動する</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="back-to-category">
         <div class="btn">
-          <a href="html-css.html">
+          <a href="others.html">
             記事一覧に戻る
           </a>
         </div>
