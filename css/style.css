@@ -64,8 +64,14 @@ code {
   padding: 2px 8px;
 }
 
+.outer-site {
+  color: var(--accent-dark-color);
+}
+
+/* container */
+
 .container {
-  padding: 0 16px;
+  margin: 0 16px;
   /* outline: 2px solid red; */
 }
 
@@ -178,7 +184,7 @@ header nav li a i {
 /* hero */
 
 .hero {
-  padding: 58px 0;
+  padding: 59px 0;
 }
 
 .hero img {
@@ -234,6 +240,10 @@ aside + aside {
 }
 
 /* list */
+
+/* .list .container {
+  outline: 2px dotted salmon;
+} */
 
 .list h1 {
   padding: 12px 0;
@@ -321,7 +331,9 @@ aside + aside {
 
 .content .container {
   background: #fafafa;
-  /* outline: 2px solid red; */
+  margin: 0;
+  padding: 0 16px;
+  /* outline: 2px solid purple; */
 }
 
 .content .container > h1 {
@@ -565,9 +577,20 @@ footer li + li {
 
 @media (min-width: 600px) {
 
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
+  /* container */
+
+  header .container,
+  footer .container {
+    margin: 0 32px;
+  }
+
+  .list .container {
+    margin: 0 32px;
+  }
+
+  .content .container {
+    margin: 0 32px;
+    padding: 0 32px;
   }
 
   .list .article-flex {
@@ -586,7 +609,7 @@ footer li + li {
 
   .list article h2 {
     font-size: 14px;
-}
+  }
 
   .content .sample {
     display: flex;
@@ -673,6 +696,26 @@ footer li + li {
 
 @media (min-width: 1000px) {
 
+  /* container */
+
+  header .container,
+  footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .list .container {
+    min-width: 768px;
+    margin: 0;
+    /* なぜ入れたかわからない */
+    width: auto;
+  }
+
+  .content .container {
+    margin: 0;
+    padding: 0 64px;
+  }
+
   .wrap,
   .article-wrap {
     display: flex;
@@ -680,33 +723,19 @@ footer li + li {
     align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;
-    /* outline: 2px solid blue; */
+    /* outline: 2px solid yellow; */
+    gap: 32px;
   }
 
   .article-wrap {
     margin-top: 59px;
-    gap: 32px;
-  }
-
-  .container {
-    max-width: 1000px;
-    padding: 0 64px;
-  }
-
-  .list .container {
-    padding: 0 32px;
   }
 
   header nav {
     display: none;
   }
 
-  .list .container {
-    width: auto;
-  }
-
   .post-date {
-    text-align: right;
     font-size: 16px;
   }
 
