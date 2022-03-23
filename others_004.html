@@ -54,150 +54,138 @@
 
 <div class="article-wrap">
 
-  <article class="content">
+  
+  <article class="content img-content">
     <div class="container">
 
       <h1>
-        aタグのクリック範囲を親要素のサイズに合わせる方法
+        マウスポインターを含めてキャプチャーする方法
       </h1>
 
       <div class="post-date">
         <span>
           <i class="bi bi-clock"></i>
-          2022/01/16
+          2022/04/03
         </span>
       </div>
 
-      <img src="img/html-css/html-css_001-hero.png" alt="記事のトップイメージ" class="article-top-img">
+      <img src="img/others/others_004-hero.png" alt="記事のトップイメージ" class="article-top-img">
 
       <section class="caption">
         <h1><i class="bi bi-list-ul"></i>この記事の目次</h1>
         <ul>
-          <li><a href="">aタグについてのおさらい</a></li>
-          <li><a href="">親要素がリストの場合</a></li>
+          <li><a href="">キャプチャーについて</a></li>
+          <li><a href="">拡大鏡を使ってキャプチャーする方法</a></li>
         </ul>
       </section>
 
       <section>
-        <h2>aタグについてのおさらい</h2>
+        <h2>キャプチャーについて</h2>
         <ul class="list-style">
-          <li>aタグはインライン要素です</li>
-          <li>aタグでdivやh1などのブロック要素を囲んでもOKです</li>
-          <li>aタグでブロック要素を囲む時は、aタグを<code>display: block</code>または<code>display: inline-block</code>にしてブロック要素に変えておくと良いです</li>
+          <li>キーボードの「PrintScreen」を押すと画面がキャプチャ(スクリーンショット)されます</li>
+          <li>「PrintScreen」ではマウスポインターは表示されません</li>
+          <li>Windowsに標準装備されている「拡大鏡」を使うとマウスポインターを含めてキャプチャできます</li>
         </ul>
       </section>
 
       <section>
-        <h2>親要素がリストの場合</h2>
-        <h3>その１ まずはリストメニューを作ってみます。</h3>
-<pre><code class="html">
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="#"&gt;リンク その１&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;リンク その２&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;リンク その３&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-<pre><code class="css">
-ul {
-  list-style: none;
-}
-ul li {
-  width: 220px;
-  background: #50bd9e;
-  padding: 8px 15px;
-}
-ul li a {
-  color: #fff;
-}
-ul li + li {
-  margin-top: 5px;
-}
-</code></pre>
-        <h4>サンプル</h4>
+        <h2>拡大鏡を使ってキャプチャーする方法</h2>
+        <h3>手順１</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/html-css/html-css_001_01.png" alt="">
+            <img src="img/others/others_004_01.png" alt="">
           </div>
           <div class="desc">
             <p>
-              aタグのテキスト部分のみがリンクの範囲となります。<br>そのため、文字のない部分はクリックできず不便です。
+              まずは「拡大鏡」を起動します。<br>
+              キーボードの「Windows」+「+」を同時押しします。<br>
+            </a>
             </p>
           </div>
-        </section>
-
+        </section><!--sample-->
       </section>
 
       <section>
-        <h3>その２ aタグをブロック要素に変更する</h3>
-<pre><code class="css">
-ul {
-  list-style: none;
-}
-ul li {
-  width: 220px;
-  background: #50bd9e;
-  padding: 8px 15px;
-}
-ul li a {
-  color: #fff;
-  display: block;
-}
-ul li + li {
-  margin-top: 5px;
-}
-</code></pre>
-        <h4>サンプル</h4>
+        <h3>手順２</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/html-css/html-css_001_02.png" alt="">
+            <img src="img/others/others_004_02.png" alt="">
           </div>
           <div class="desc">
             <p>
-              <code>display: block</code>にすることで<code>width: 100%</code>になります。<br>
-              これで一見良さそうに見えますが、実はpaddingを設定している部分がクリックできません。
+              念のためショートカット以外の起動方法も紹介します。<br>
+              左下の「スタートボタン」をクリックして、メニューにある「Windows 簡単操作」を展開して「拡大鏡」をクリックします。<br>
+            </a>
             </p>
           </div>
-        </section>
+        </section><!--sample-->
       </section>
 
       <section>
-        <h3>その３ paddingをaタグに付け替えてみる</h3>
-<pre><code class="css">
-ul {
-  list-style: none;
-}
-ul li {
-  width: 220px;
-  background: #50bd9e;
-}
-ul li a {
-  color: #fff;
-  display: block;
-  padding: 8px 15px;
-}
-ul li + li {
-  margin-top: 5px;
-}
-</code></pre>
-        <h4>サンプル</h4>
+        <h3>手順３</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/html-css/html-css_001_03.png" alt="">
+            <img src="img/others/others_004_03.png" alt="">
           </div>
           <div class="desc">
             <p>
-              paddingをliタグからaタグに付け替えることで、リスト全体にリンクの範囲が広がりました。<br>
-              なお、リストに設定したpadding分、横幅の大きさが小さくなります。<br>
+              拡大鏡を起動すると、このような拡大鏡のツールバーが表示されます。
+            </a>
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順４</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_004_04.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              拡大鏡を見てみると、マウスポインター付近が画面上に表示されています。
+            </a>
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順５</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_004_05.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              この状態でキーボードの「PrintScreen」をクリックします。
+            </a>
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順６</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_004_06.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              マウスポインターが表示された状態でスクリーンショットを撮ることができました。<br>
               これで完成です！
+            </a>
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
           </div>
-        </section>
+        </section><!--sample-->
       </section>
 
       <section class="back-to-category">
         <div class="btn">
-          <a href="html-css.html">
+          <a href="others.html">
             記事一覧に戻る
           </a>
         </div>

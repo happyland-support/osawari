@@ -241,10 +241,6 @@ aside + aside {
 
 /* list */
 
-/* .list .container {
-  outline: 2px dotted salmon;
-} */
-
 .list h1 {
   padding: 12px 0;
   font-size: 14px;
@@ -552,25 +548,11 @@ footer {
 }
 
 footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 footer small {
   font: 16px;
-}
-
-footer ul {
-  display: flex;
-}
-
-footer ul li i {
-  font-size: 20px;
-}
-
-footer li + li {
-  margin-left: 8px;
 }
 
 /* medium screen */
