@@ -64,7 +64,7 @@
       <div class="post-date">
         <span>
           <i class="bi bi-clock"></i>
-          2022/01/30
+          2021/01/30
         </span>
       </div>
 
@@ -111,7 +111,7 @@
       </section>
 
       <section>
-        <h3>その２ 固定したい要素に<code>position: sticky</code>を設定します</h3>
+        <h3>その２ 固定したい要素に<code class="code-tag">position: sticky</code>を設定します</h3>
 <pre><code class="html">
 &lt;header&gt;
   ヘッダーです。
@@ -136,8 +136,8 @@ header {
           </div>
           <div class="desc">
             <p>
-              ヘッダーに<code>position: sticky</code>を設定し、ヘッダーを固定します。<br>
-              その際に<code>top: 0</code>の表記を忘れないようにしてください。<br>
+              ヘッダーに<code class="code-tag">position: sticky</code>を設定し、ヘッダーを固定します。<br>
+              その際に<code class="code-tag">top: 0</code>の表記を忘れないようにしてください。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
@@ -147,7 +147,7 @@ header {
 
       <section>
         <h2>ヘッダーを固定する(position: fixed)</h2>
-        <h3>手順１ 今度は<code>position: fixed</code>で実装してみます</h3>
+        <h3>手順１ 今度は<code class="code-tag">position: fixed</code>で実装してみます</h3>
 <pre><code class="html">
 &lt;header&gt;
   ヘッダーです。
@@ -173,7 +173,7 @@ header {
           </div>
           <div class="desc">
             <p>
-              <code>position: fixed</code>に変更すると、この要素が浮いて表示されるようになるので、メインコンテンツと重なる部分ができてしまいます。
+              <code class="code-tag">position: fixed</code>に変更すると、この要素が浮いて表示されるようになるので、メインコンテンツと重なる部分ができてしまいます。
             </p>
           </div>
         </section><!--sample-->
@@ -181,7 +181,7 @@ header {
       </section>
 
       <section>
-        <h3>手順２ メインコンテンツに<code>padding: top</code>を設定してみます</h3>
+        <h3>手順２ メインコンテンツに<code class="code-tag">padding: top</code>を設定してみます</h3>
 <pre><code class="css">
 header {
   position: fixed;
@@ -199,7 +199,7 @@ main {
           </div>
           <div class="desc">
             <p>
-              ヘッダーの高さと同じ大きさの幅をメインコンテンツに<code>padding-top</code>として設定することで、表示が正しくなりました。<br>
+              ヘッダーの高さと同じ大きさの幅をメインコンテンツに<code class="code-tag">padding-top</code>として設定することで、表示が正しくなりました。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
@@ -245,7 +245,7 @@ main {
       </section>
 
       <section>
-        <h3>手順２ グローバルナビゲーションに<code>position: sticky</code>を実装してみます</h3>
+        <h3>手順２ グローバルナビゲーションに<code class="code-tag">position: sticky</code>を実装してみます</h3>
 <pre><code class="css">
 nav {
   position: sticky;
@@ -260,7 +260,7 @@ nav {
           </div>
           <div class="desc">
             <p>
-              グローバルナビゲーションに<code>position: sticky</code>を設定し、<code>top: 0</code>を設定します。<br>
+              グローバルナビゲーションに<code class="code-tag">position: sticky</code>を設定し、<code class="code-tag">top: 0</code>を設定します。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
@@ -302,7 +302,7 @@ nav {
       </section>
 
       <section>
-        <h3>手順３ 見出しに<code>position: sticky</code>を設定してみます</h3>
+        <h3>手順３ 見出しに<code class="code-tag">position: sticky</code>を設定してみます</h3>
 <pre><code class="css">
 h1 {
   position: sticky;
@@ -317,7 +317,7 @@ h1 {
           </div>
           <div class="desc">
             <p>
-              h1タグに<code>position: sticky</code>と<code>top: 0</code>を設定すると、スティッキーアイテムが覆いかぶさるようにフロートしていきます。<br>
+              h1タグに<code class="code-tag">position: sticky</code>と<code class="code-tag">top: 0</code>を設定すると、スティッキーアイテムが覆いかぶさるようにフロートしていきます。<br>
               これで完成です！
             </p>
           </div>
@@ -393,7 +393,7 @@ h1 {
           <div class="desc">
             <p>
               こちらのサブコンテンツの部分を固定したいと思います。<br>
-              ちなみにフロートではなく、<code>display: flex</code>にする必要があります。
+              ちなみにフロートではなく、<code class="code-tag">display: flex</code>にする必要があります。
             </p>
           </div>
         </section><!--sample-->
@@ -401,7 +401,7 @@ h1 {
       </section>
 
       <section>
-        <h3>手順２ サイドバーに<code>position: sticky</code>を設定してみます</h3>
+        <h3>手順２ サイドバーに<code class="code-tag">position: sticky</code>を設定してみます</h3>
 <pre><code class="css">
 aside {
   position: sticky;
@@ -455,7 +455,7 @@ aside {
           <div class="desc">
             <p>
               asideタグに入れ子にするようにしてdivタグを使用してサブコンテンツを囲います。<br>
-              併せて、asideタグから<code>positon: sticky</code>を外し、divタグに付け替えます。<br>
+              併せて、asideタグから<code class="code-tag">positon: sticky</code>を外し、divタグに付け替えます。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
@@ -508,7 +508,7 @@ header {
           </div>
           <div class="desc">
             <p>
-              ヘッダーを加える時は、ヘッダーの高さ分下に続くコンテンツに<code>padding-top</code>を設定するのを忘れないようにしましょう。
+              ヘッダーを加える時は、ヘッダーの高さ分下に続くコンテンツに<code class="code-tag">padding-top</code>を設定するのを忘れないようにしましょう。
             </p>
           </div>
         </section><!--sample-->
@@ -562,7 +562,7 @@ header {
           </div>
           <div class="desc">
             <p>
-              ２つ目のサブコンテンツに<code>position: sticky</code>を設定し、追従させるということもできます。<br>
+              ２つ目のサブコンテンツに<code class="code-tag">position: sticky</code>を設定し、追従させるということもできます。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">

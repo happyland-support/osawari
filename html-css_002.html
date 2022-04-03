@@ -64,7 +64,7 @@
       <div class="post-date">
         <span>
           <i class="bi bi-clock"></i>
-          2022/01/23
+          2021/01/23
         </span>
       </div>
 
@@ -95,14 +95,14 @@
         <h2>中央寄せの基本的な考え方</h2>
         <ul class="list-style">
           <li>中央寄せする時は、その要素がインライン要素かブロック要素かによって変わります。</li>
-          <li>インライン要素を中央寄せする時は<code>text-align: center</code>を使用します。</li>
-          <li>ブロック要素を中央寄せする時は<code>margin: 0 auto</code>を使用します。左右のマージンをautoにすることによって中央寄せを表現できます。</li>
+          <li>インライン要素を中央寄せする時は<code class="code-tag">text-align: center</code>を使用します。</li>
+          <li>ブロック要素を中央寄せする時は<code class="code-tag">margin: 0 auto</code>を使用します。左右のマージンをautoにすることによって中央寄せを表現できます。</li>
         </ul>
       </section>
 
       <section>
         <h2>インライン要素の中央寄せ</h2>
-        <h3>その１ まずは中央寄せしたい要素に<code>text-align: center</code>を実装してみます</h3>
+        <h3>その１ まずは中央寄せしたい要素に<code class="code-tag">text-align: center</code>を実装してみます</h3>
 <pre><code class="html">
 &lt;p&gt;
   &lt;a&gt;おさわりの覚書き&lt;/a&gt;
@@ -130,7 +130,7 @@ a {
       </section>
 
       <section>
-        <h3>その２ 親要素となるブロック要素に<code>text-align: center</code>を付け替えてみます</h3>
+        <h3>その２ 親要素となるブロック要素に<code class="code-tag">text-align: center</code>を付け替えてみます</h3>
 <pre><code class="html">
 &lt;p&gt;
   &lt;a&gt;おさわりの覚書き&lt;/a&gt;
@@ -149,7 +149,7 @@ p {
           <div class="desc">
             <p>
               これで中央寄せができました。<br>
-              <code>text-align: center</code>を使用する時は、指定する要素と位置が決まる要素が異なることに注意してください。<br>
+              <code class="code-tag">text-align: center</code>を使用する時は、指定する要素と位置が決まる要素が異なることに注意してください。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
@@ -179,7 +179,7 @@ p {
           <div class="desc">
             <p>
               img要素も同じように中央寄せ出来ます。<br>
-              ただしimgタグはインライン要素ですので、親要素に対し<code>text-align: center</code>を設置します。<br>
+              ただしimgタグはインライン要素ですので、親要素に対し<code class="code-tag">text-align: center</code>を設置します。<br>
               こちらも同じようにimgタグやaタグに設定した場合は中央寄せができなくなりますので、注意です。<br>
               これで完成です！
             </p>
@@ -191,7 +191,7 @@ p {
 
       <section>
         <h2>ブロック要素の中央寄せ</h2>
-        <h3>その１ まずは中央寄せしたい要素に<code>margin: 0 auto</code>を実装してみます</h3>
+        <h3>その１ まずは中央寄せしたい要素に<code class="code-tag">margin: 0 auto</code>を実装してみます</h3>
 <pre><code class="html">
 &lt;p&gt;おさわりの覚書き&lt;/p&gt;
 </code></pre>
@@ -219,7 +219,7 @@ p {
       </section>
 
       <section>
-        <h3>その２ 要素にwidthを設定してみる</h3>
+        <h3>その２ 要素にwidthを設定してみよう</h3>
 <pre><code class="html">
 &lt;p&gt;おさわりの覚書き&lt;/p&gt;
 </code></pre>
@@ -238,7 +238,7 @@ p {
           <div class="desc">
             <p>
               親要素がない時はbodyが親要素になります。<br>
-              また、補足になりますが、ボックス内の文字を中央寄せにしたい時は<code>text-align: center</code>を設定する必要があります。<br>
+              また、補足になりますが、ボックス内の文字を中央寄せにしたい時は<code class="code-tag">text-align: center</code>を設定する必要があります。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">
@@ -271,9 +271,9 @@ p {
           </div>
           <div class="desc">
             <p>
-              <code>marin: 0 auto</code>は親要素の幅を基準に中央寄せになります。<br>
+              <code class="code-tag">marin: 0 auto</code>は親要素の幅を基準に中央寄せになります。<br>
               そもそも親要素(例: divタグ)が左に寄っていたら、その分だけ左に寄ってしまいます。<br>
-              こちらを解消するためには親要素(例: divタグ)にも<code>marin: 0 auto</code>を適用する必要があります。
+              こちらを解消するためには親要素(例: divタグ)にも<code class="code-tag">marin: 0 auto</code>を適用する必要があります。
             </p>
           </div>
         </section>
@@ -373,11 +373,11 @@ p {
           </div>
           <div class="desc">
             <p>
-              <code>position: absolute</code>を活用してブロック要素を縦方向に中央寄せします。<br>
+              <code class="code-tag">position: absolute</code>を活用してブロック要素を縦方向に中央寄せします。<br>
               こちらを使用することで、文章が２行以上でも、ブロック要素でも中央寄せが表現できます。<br>
-              まず、親要素に<code>position: relative</code>を指定し、中央配置したい要素を絶対配置<code>positon: absolute</code>します。<br>
-              次に、中央配置したい要素に<code>top: 50%</code>を指定して、親要素の上から50%の位置にします。<br>
-              同じく中央配置したい要素に<code>transform: translateY(-50%)</code>でズレを補正します。<br>
+              まず、親要素に<code class="code-tag">position: relative</code>を指定し、中央配置したい要素を絶対配置<code class="code-tag">positon: absolute</code>します。<br>
+              次に、中央配置したい要素に<code class="code-tag">top: 50%</code>を指定して、親要素の上から50%の位置にします。<br>
+              同じく中央配置したい要素に<code class="code-tag">transform: translateY(-50%)</code>でズレを補正します。<br>
               これで完成です！
             </p>
             <img src="img/finish.png" alt="" width="100" height="100" class="finish">

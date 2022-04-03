@@ -57,15 +57,19 @@ i {
   margin-right: 4px;
 }
 
-code {
+.code-tag {
   background:rgba(0, 0, 0, .1);
   border-radius: 4px;
   margin: 0 4px;
   padding: 2px 8px;
 }
 
-.outer-site {
-  color: var(--accent-dark-color);
+.outer-site-url {
+  color: #0366D6;
+}
+
+.outer-site-url:hover {
+  text-decoration: underline;
 }
 
 /* container */
@@ -388,8 +392,8 @@ aside + aside {
 }
 
 .content .list-style {
-  list-style: square inside;
-  padding: 12px;
+  list-style: square;
+  padding: 12px 12px 12px 25px;
 }
 
 .content .list-style li + li {
@@ -421,6 +425,10 @@ aside + aside {
   border-radius: 4px;
   padding: 12px;
   margin-top: 16px;
+}
+
+.content .sample .pic img + img {
+  margin-top: 8px;
 }
 
 .content .sample .desc::before {
@@ -472,7 +480,11 @@ aside + aside {
 
 .hljs {
   position: relative;
-  padding: 40px 12px 12px;
+  border-radius: 4px;
+}
+
+pre code.one-sentence{
+  padding: 0.2em 0.8em;
 }
 
 .hljs::before {
@@ -487,27 +499,27 @@ aside + aside {
 
 .hljs.html::before {
   content: 'HTML';
-  background-color: #006eb9;
+  background-color: #56b7d5;
 }
 
 .hljs.css::before {
   content: 'CSS';
-  background-color: #e44d26;
+  background-color: #e06c75;
 }
 
 .hljs.javascript::before {
   content: 'JavaScript';
-  background-color: #DBCC33;
+  background-color: #fcf264;
 }
 
 .hljs.php::before {
   content: 'PHP';
-  background-color: #8D78E9;
+  background-color: #50bd9e;
 }
 
 .hljs.sql::before {
   content: 'SQL';
-  background-color: #E68EC7;
+  background-color: #f19ec2;
 }
 
 /* back-to-category */

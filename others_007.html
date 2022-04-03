@@ -54,307 +54,266 @@
 
 <div class="article-wrap">
 
+  
   <article class="content img-content">
     <div class="container">
 
       <h1>
-        エクセルで「1」を「001」と表示する方法
+        OneDriveの設定と利用方法
       </h1>
 
       <div class="post-date">
         <span>
           <i class="bi bi-clock"></i>
-          2021/03/27
+          2021/06/05
         </span>
       </div>
 
-      <img src="img/excel/excel_003-hero.png" alt="記事のトップイメージ" class="article-top-img">
+      <img src="img/others/others_007-hero.png" alt="記事のトップイメージ" class="article-top-img">
 
       <section class="caption">
         <h1><i class="bi bi-list-ul"></i>この記事の目次</h1>
         <ul>
-          <li><a href="">エクセルの仕様について</a></li>
-          <li><a href="">ユーザー定義を使う方法</a></li>
-          <li><a href="">REPT(リピート)関数を使う方法</a></li>
-          <li><a href="">蛇足</a></li>
+          <li><a href="">OneDriveとは？</a></li>
+          <li><a href="">OneDriveの基本設定</a></li>
+          <li><a href="">保存・共有の仕方</a></li>
+          <li><a href="">アイコンの意味</a></li>
         </ul>
       </section>
 
       <section>
-        <h2>エクセルの仕様について</h2>
-        <h3>仕様１</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_01.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              エクセルの仕様上、「001」と入力したとしても「1」と表示されてしまします。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>仕様２</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_02.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              ただ、桁数を揃えたい時もあると思います。<br>
-              今回はそんな時に使えるテクニックを紹介します。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h2>ユーザー定義を使う方法</h2>
-        <h3>手順１</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_03.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              まずは、設定したい範囲を選択します。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>手順２</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_04.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              右クリックをして、セルの書式設定をクリックします。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>手順３</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_05.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              分類にある「ユーザー定義」を選択し、種類の欄に「000」を入力します。<br>
-              次に「OKボタン」をクリックします。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>手順４</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_06.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              数字部分が３桁で表示されるようになりました。<br>
-              これで完成です！
-            </p>
-            <img src="img/finish.png" alt="" width="100" height="100" class="finish">
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>補足</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_07.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              細かいことですが、表示では「000」となっていますが、実際のデータは「0」となっていることが確認できると思います。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h2>REPT(リピート)関数を使う方法</h2>
-        <h3>手順１</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_08.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              REPT(リピート)関数を使うと元の連番を残しつつ、別のセルにゼロで埋めた連番を表示させることができます。<br>
-              今回は出席番号の右隣に桁を揃えた連番を表示してみましょう。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>手順２</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_09.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              次の式を入力します。<br>
-              「=REPT("0",3-LEN(A2))&A2」
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>手順３</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_10.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              選択したセルの範囲の右下にマウスポインターを合わせるとマウスポインターが変わります。<br>
-              そのまま下にドラッグしていきます。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>手順４</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_11.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              数字部分が３桁で表示されるようになりました。<br>
-              これで完成です！
-            </p>
-            <img src="img/finish.png" alt="" width="100" height="100" class="finish">
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>補足１</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_12.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              REPT(リピート)関数の解説をします。<br>
-              １つ目の引数に繰り返したい「文字列」、２つ目の引数に「繰り返し回数」を記入します。<br>
-              まず「文字列」は「0」です。<br>
-              次に「繰り返し回数」ですが、「LEN(A2)」=「A2のセル内の文字数」となり「A2」には「3」が１文字入っているので、「LEN(A2)=1」です。<br>
-              今回は３桁に揃えたいので、「3」から「A2の文字数」分を引いた数「3-1」の「2」が繰り返し回数となり「3」の前に「0を2回繰り返す」という意味になります。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h3>補足２</h3>
-        <section class="sample">
-          <div class="pic">
-            <img src="img/excel/excel_003_13.png" alt="">
-          </div>
-          <div class="desc">
-            <p>
-              REPT(リピート)関数で生成された「繰り返し回数分」の「0」の文字列と「A2」のセル内の文字列を「&」で連結しています。
-            </p>
-          </div>
-        </section><!--sample-->
-      </section>
-
-      <section>
-        <h2>蛇足</h2>
+        <h2>OneDriveとは？</h2>
         <ul class="list-style">
-          <li>ここから紹介する内容は基本的にオススメしません</li>
-          <li>数字が文字列として扱われますので、数式として利用する場合うまく機能しなくなります。</li>
-          <li>表示だけ変えたいという方のみ、読み進めてください。</li>
+          <li>Microsoftが提供しているクラウドストレージサービスです</li>
+          <li>Dropboxを使ったことがある方ならそのままのイメージです</li>
+          <li>Microsoftのアカウントさえあれば無料で利用できます</li>
+          <li>ファイル共有することでパソコンやスマホなどからファイルの閲覧・編集・削除ができます</li>
         </ul>
       </section>
 
       <section>
-        <h3>蛇足１の１</h3>
+        <h2>OneDriveの基本設定</h2>
+        <h3>手順１</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/excel/excel_003_14.png" alt="">
+            <img src="img/others/others_007_01.png" alt="">
           </div>
           <div class="desc">
             <p>
-              まずは、設定したい範囲を選択します。
+              タスクバーの右の方にある「雲のアイコン」をクリックします。
             </p>
           </div>
         </section><!--sample-->
       </section>
 
       <section>
-        <h3>蛇足１の２</h3>
+        <h3>手順２</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/excel/excel_003_15.png" alt="">
+            <img src="img/others/others_007_02.png" alt="">
           </div>
           <div class="desc">
             <p>
-              「ホーム」タブの「数値」と表示されているプルダウンメニューから「文字列」を選択します。
+              表示されるウィンドウの右上の「歯車アイコン」をクリックします。
             </p>
           </div>
         </section><!--sample-->
       </section>
 
       <section>
-        <h3>蛇足１の３</h3>
+        <h3>手順３</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/excel/excel_003_16.png" alt="">
+            <img src="img/others/others_007_03.png" alt="">
           </div>
           <div class="desc">
             <p>
-              これで「001」と表示されます。
+              表示されるメニューの「設定」をクリックします。
             </p>
           </div>
         </section><!--sample-->
       </section>
 
       <section>
-        <h3>蛇足２</h3>
+        <h3>手順４</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/excel/excel_003_17.png" alt="">
+            <img src="img/others/others_007_04.png" alt="">
           </div>
           <div class="desc">
             <p>
-              こちらは別の方法になりますが、「'」(シングルクォーテーション)を入力してから「001」と入力すると文字列として扱われます。
+              「バックアップ」タブのスクリーンショットの項目にある「作成したスクリーンショットをOneDriveに自動保存する」にチェックを入れると、文字のままの意味ですが、個人的には使いやすいです。
             </p>
           </div>
         </section><!--sample-->
       </section>
 
       <section>
-        <h3>蛇足まとめ</h3>
+        <h3>手順５</h3>
         <section class="sample">
           <div class="pic">
-            <img src="img/excel/excel_003_18.png" alt="">
+            <img src="img/others/others_007_05.png" alt="">
           </div>
           <div class="desc">
             <p>
-              上記のどちらの方法でも「文字列」として扱われてしまいます。<br>
-              そのため、左上に緑色のマークが表示されてしまいます。<br>
-              こちらは「エラーチェックオプション」と言い、エクセルからの注意喚起です。<br>
-              緑色のマークを非表示にする時は、表示されている「！」マークをクリックし「このエラーを無視する」をクリックする必要があります。
+              「バックアップ」タブの「バックアップを管理」をクリックします。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順６</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_06.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              バックアップに設定したい項目を選びます。<br>
+              自分の場合は「デスクトップ」と「ドキュメント」だけをチェック入れています。<br>
+              その後、「バックアップの開始」のボタンをクリックします。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順７</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_07.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              「同期の進行状況を表示」をクリックして終了です。<br>
+              これで完成です！
+            </p>
+            <img src="img/finish.png" alt="" width="100" height="100" class="finish">
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h2>保存・共有の仕方</h2>
+        <h3>手順１</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_08.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              エクスプローラーを起動すると「OneDrive」が表示されていますので、こちらをクリックします。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順２</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_09.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              エクスプローラーを起動すると「OneDrive」が表示されていますので、こちらをクリックします。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順３</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_10.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              エクスプローラーを起動すると「OneDrive」が表示されていますので、こちらをクリックします。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>手順４</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_11.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              エクスプローラーを起動すると「OneDrive」が表示されていますので、こちらをクリックします。<br>
+              これで完成です！
+            </p>
+            <img src="img/finish.png" alt="" width="100" height="100" class="finish">
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h2>アイコンの意味</h2>
+        <p>
+          OneDriveを利用するとフォルダやアイコン、ショートカットなどにアイコンが表示されます。<br>
+          今回はアイコンの意味を紹介します。
+        </p>
+        <h3>その１</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_12.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              矢印が回っているようなアイコンは同期中を意味します。<br>
+              ファイルをアップロードする時やOnedriveからPCに新しいファイルを同期する時などに表示されます。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>その２</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_13.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              緑色のチェックのアイコンはダウンロードや同期が完了したこを意味します。<br>
+              ローカル上で利用可能なため、インターネットにアクセスしなくてもファイルを開くことができます。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>その３の１</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_14.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              ローカル上にある同期済みのファイルを右クリックするとメニューが表示されます。<br>
+              「空き容量を増やす」を選択してください。
+            </p>
+          </div>
+        </section><!--sample-->
+      </section>
+
+      <section>
+        <h3>その３の２</h3>
+        <section class="sample">
+          <div class="pic">
+            <img src="img/others/others_007_15.png" alt="">
+          </div>
+          <div class="desc">
+            <p>
+              すると「青い雲のアイコン」に切り替わります。<br>
+              こちらはファイルがオンラインでのみ使用できる状態を意味します。<br>
+              ローカル上にはないので、PCの容量を占有しません。
             </p>
           </div>
         </section><!--sample-->
@@ -362,7 +321,7 @@
 
       <section class="back-to-category">
         <div class="btn">
-          <a href="excel.html">
+          <a href="others.html">
             記事一覧に戻る
           </a>
         </div>
