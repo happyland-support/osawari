@@ -102,7 +102,7 @@
 
       <section>
         <h2>インライン要素の中央寄せ</h2>
-        <h3>その１ まずは中央寄せしたい要素に<code class="code-tag">text-align: center</code>を実装してみます</h3>
+        <h3>その１ まずは中央寄せしたい要素に<code class="code-tag">text-align: center</code>を実装してみましょう</h3>
 <pre><code class="html">
 &lt;p&gt;
   &lt;a&gt;おさわりの覚書き&lt;/a&gt;
@@ -122,7 +122,7 @@ a {
           <div class="desc">
             <p>
               一見うまく行きそうなのですが、これだと中央寄せになりません。<br>
-              実はtext-alignプロパティとはブロックレベル要素(例：pタグ)に指定し、その要素内のインライン要素(例：aタグ)の水平方向の位置を決めることができるプロパティなのです。
+              実は<code class="code-tag">text-align</code>プロパティとはブロックレベル要素(例：pタグ)に指定し、その要素内のインライン要素(例：aタグ)の水平方向の位置を決めることができるプロパティなのです。
             </p>
           </div>
         </section><!--sample-->
@@ -130,7 +130,7 @@ a {
       </section>
 
       <section>
-        <h3>その２ 親要素となるブロック要素に<code class="code-tag">text-align: center</code>を付け替えてみます</h3>
+        <h3>その２ 親要素となるブロック要素に<code class="code-tag">text-align: center</code>を付け替えてみましょう</h3>
 <pre><code class="html">
 &lt;p&gt;
   &lt;a&gt;おさわりの覚書き&lt;/a&gt;
@@ -304,7 +304,7 @@ p {
           </div>
           <div class="desc">
             <p>
-              ボックス内の文字(インライン要素)を縦方向に中央寄せするには「行の高さ＝ボックスの高さ」にしてみましょう。<br>
+              ボックス内の文字(インライン要素)を縦方向に中央寄せするには「<span class="under-line">行の高さ＝ボックスの高さ</span>」にしてみましょう。<br>
               行の高さはline-heightで指定できます。<br>
               これで完成です！
             </p>

@@ -101,15 +101,15 @@
 ul {
   list-style: none;
 }
-ul li {
+li {
   width: 220px;
   background: #50bd9e;
   padding: 8px 15px;
 }
-ul li a {
+li a {
   color: #fff;
 }
-ul li + li {
+li + li {
   margin-top: 5px;
 }
 </code></pre>
@@ -120,7 +120,9 @@ ul li + li {
           </div>
           <div class="desc">
             <p>
-              aタグのテキスト部分のみがリンクの範囲となります。<br>そのため、文字のない部分はクリックできず不便です。
+              aタグのテキスト部分のみがリンクの範囲となります。<br>
+              そのため、文字のない部分はクリックできず不便です。<br>
+              <span class="note">※点線で囲まれている範囲がクリックできる範囲です。</span>
             </p>
           </div>
         </section>
@@ -133,16 +135,16 @@ ul li + li {
 ul {
   list-style: none;
 }
-ul li {
+li {
   width: 220px;
   background: #50bd9e;
   padding: 8px 15px;
 }
-ul li a {
+li a {
   color: #fff;
   display: block;
 }
-ul li + li {
+li + li {
   margin-top: 5px;
 }
 </code></pre>
@@ -153,8 +155,8 @@ ul li + li {
           </div>
           <div class="desc">
             <p>
-              <code class="code-tag">display: block</code>にすることで<code class="code-tag">width: 100%</code>になります。<br>
-              これで一見良さそうに見えますが、実はpaddingを設定している部分がクリックできません。
+              aタグを<code class="code-tag">display: block</code>にすることで<code class="code-tag">width: 100%</code>になります。<br>
+              これで一見良さそうに見えますが、実は<code class="code-tag">padding</code>を設定している部分がクリックできません。
             </p>
           </div>
         </section>
@@ -166,16 +168,16 @@ ul li + li {
 ul {
   list-style: none;
 }
-ul li {
+li {
   width: 220px;
   background: #50bd9e;
 }
-ul li a {
+li a {
   color: #fff;
   display: block;
   padding: 8px 15px;
 }
-ul li + li {
+li + li {
   margin-top: 5px;
 }
 </code></pre>

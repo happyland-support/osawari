@@ -64,6 +64,15 @@ i {
   padding: 2px 8px;
 }
 
+.under-line {
+  background: linear-gradient(transparent 70%, #ffff0080 70%);
+}
+
+.note {
+  font-size: 14px;
+  color: #aaa;
+}
+
 .outer-site-url {
   color: #0366D6;
 }
